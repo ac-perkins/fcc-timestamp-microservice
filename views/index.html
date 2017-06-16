@@ -1,0 +1,54 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Ain't Nobody Got Time For That
+      </h1>
+    </header>
+
+    <main>
+      <p class="bold">Hit me up with the time, with a Unix timestamp or a natural language date (example: September 4, 1982)</p>
+      <p>
+        If it does not contain a date or Unix timestamp, it returns null for those properties.
+      </p>
+      <p>Example Usage:</p>
+      <p class="code">https://alive-check.glitch.me/April%2019%202013</p>
+      <p class="code">https://alive-check.glitch.me/1366329600</p>
+      <p>Example Output:</p>
+      <p class="code">{"unix":"1366329600","natural":"April 19th 2013"}</p>
+      
+    </main>
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
